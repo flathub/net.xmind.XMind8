@@ -47,8 +47,8 @@ modules:
     buildsystem: simple
     build-commands:
       - mkdir /app/jre
-      - cp -a /usr/lib/sdk/openjdk8/jvm/java-8-openjdk/* /app/jre
-      - rm -rf /app/jre/src.zip /app/jre/include /app/jre/demo /app/jre/sample
+      - cp -ar /usr/lib/sdk/openjdk8/jvm/java-8-openjdk/jre/{bin,lib} /app/jre
+      - find /app/jre -type f -name '*.diz' -delete
   - name: xmind
     buildsystem: simple
     build-commands:
