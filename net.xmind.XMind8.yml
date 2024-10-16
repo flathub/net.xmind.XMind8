@@ -37,8 +37,8 @@ modules:
       - install -Dm755 XMind.sh /app/bin/XMind
       - install -Dm755 apply_extra.sh /app/bin/apply_extra
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/appdata/
-      # Icons have be to extracted from extra data
-      - install -Dm644 ${FLATPAK_ID}.desktop -t /app/
+      - install -Dm644 ${FLATPAK_ID}.desktop -t /app/share/applications
+      - install -Dm644 ${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps
       - ln -s ../extra/fonts /app/share/fonts
     sources:
       - type: file
@@ -52,6 +52,9 @@ modules:
 
       - type: file
         path: net.xmind.XMind8.desktop
+
+      - type: file
+        path: net.xmind.XMind8.svg
 
       - type: extra-data
         filename: xmind.zip
