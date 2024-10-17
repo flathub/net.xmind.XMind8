@@ -1,6 +1,6 @@
 id: net.xmind.XMind8
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk8
@@ -23,40 +23,22 @@ finish-args:
   - --filesystem=/run/media
   - --filesystem=/media
   - --env=GTK_IM_MODULE=xim
-cleanup:
-  - "*.a"
-  - "*.la"
-  - /include
-  - /lib/pkgconfig
-  - /lib/cmake
-  - "/cache"
-  - "/include"
-  - "/lib/pkgconfig"
-  - "/man"
-  - "/share/aclocal"
-  - "/share/devhelp"
-  - "/share/gir-1.0"
-  - "/share/gtk-doc"
-  - "/share/man"
-  - "/share/pkgconfig"
-  - "/share/vala"
-  - "/lib/systemd"
+  - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
+  - --env=JAVA_HOME=/app/jre
 modules:
   - shared-modules/gtk2/gtk2.json
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - mkdir /app/jre
-      - cp -ar /usr/lib/sdk/openjdk8/jvm/java-8-openjdk/jre/{bin,lib} /app/jre
-      - find /app/jre -type f -name '*.diz' -delete
+      - /usr/lib/sdk/openjdk8/install.sh
   - name: xmind
     buildsystem: simple
     build-commands:
       - install -Dm755 XMind.sh /app/bin/XMind
       - install -Dm755 apply_extra.sh /app/bin/apply_extra
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/appdata/
-      # Icons have be to extracted from extra data
-      - install -Dm644 ${FLATPAK_ID}.desktop -t /app/
+      - install -Dm644 ${FLATPAK_ID}.desktop -t /app/share/applications
+      - install -Dm644 ${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps
       - ln -s ../extra/fonts /app/share/fonts
     sources:
       - type: file
@@ -70,6 +52,9 @@ modules:
 
       - type: file
         path: net.xmind.XMind8.desktop
+
+      - type: file
+        path: net.xmind.XMind8.svg
 
       - type: extra-data
         filename: xmind.zip

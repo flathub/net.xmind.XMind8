@@ -15,6 +15,4 @@ if [ ! -f $STAMP_FILE ] || [ $STAMP_FILE -ot /app/extra/xmind.zip ]; then
     touch -r /app/extra/xmind.zip $STAMP_FILE
 fi
 cd $APPDIR/XMind
-export PATH=/app/jre/bin:$PATH
-export JAVA_HOME=/app/jre
 exec ./XMind

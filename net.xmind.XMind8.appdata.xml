@@ -11,14 +11,13 @@
     <p>NOTE: This wrapper is not verified by, affiliated with, or
     supported by XMind Ltd.</p>
   </description>
-  <icon type="remote">https://assets.xmind.net/www/assets/images/download/new/logo_xm8-e067a0dc9d.svg</icon>
   <url type="homepage">https://www.xmind.net/xmind8/</url>
   <url type="bugtracker">https://github.com/xmindltd/xmind/issues</url>
   <url type="faq">https://www.xmind.net/faq/</url>
   <url type="help">http://support.xmind.net/</url>
   <developer_name>XMind Ltd.</developer_name>
   <update_contact>support_at_xmind.net</update_contact>
-  ​<launchable type="desktop-id">net.xmind.XMind8.desktop</launchable>
+  <launchable type="desktop-id">net.xmind.XMind8.desktop</launchable>
   <categories>
     <category>Office</category>
   </categories>
