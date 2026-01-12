@@ -6,10 +6,9 @@
   <name>XMind 8</name>
   <summary>Amazing brainstorming and mind mapping tool.</summary>
   <description>
+    <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by XMind Ltd.**</p>
     <p>XMind, a full-featured mind mapping and brainstorming tool, designed to generate ideas, inspire creativity, brings you efficiency both in work and life. Tens of million people love it.</p>
     <p>This is the version that based on Java and Eclipse platform.</p>
-    <p>NOTE: This wrapper is not verified by, affiliated with, or
-    supported by XMind Ltd.</p>
   </description>
   <url type="homepage">https://www.xmind.net/xmind8/</url>
   <url type="bugtracker">https://github.com/xmindltd/xmind/issues</url>
