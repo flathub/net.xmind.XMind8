@@ -4,28 +4,26 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary=https://www.xmind.net/license/xpla/</project_license>
   <name>XMind 8</name>
-  <summary>Amazing brainstorming and mind mapping tool.</summary>
+  <summary>Amazing brainstorming and mind mapping tool</summary>
   <description>
+    <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by XMind Ltd.**</p>
     <p>XMind, a full-featured mind mapping and brainstorming tool, designed to generate ideas, inspire creativity, brings you efficiency both in work and life. Tens of million people love it.</p>
     <p>This is the version that based on Java and Eclipse platform.</p>
-    <p>NOTE: This wrapper is not verified by, affiliated with, or
-    supported by XMind Ltd.</p>
   </description>
   <url type="homepage">https://www.xmind.net/xmind8/</url>
-  <url type="bugtracker">https://github.com/xmindltd/xmind/issues</url>
   <url type="faq">https://www.xmind.net/faq/</url>
-  <url type="help">http://support.xmind.net/</url>
-  <developer_name>XMind Ltd.</developer_name>
+  <url type="help">https://support.xmind.net/</url>
+  <developer id="net.xmind">
+    <name>XMind Ltd.</name>
+  </developer>
   <update_contact>support_at_xmind.net</update_contact>
   <launchable type="desktop-id">net.xmind.XMind8.desktop</launchable>
   <categories>
     <category>Office</category>
   </categories>
   <releases>
-    <release version="R3.7.9.201912052356" date="2019-12-05">
-    </release>
-    <release version="R3.7.8.201807240049" date="2018-07-24">
-    </release>
+    <release version="R3.7.9.201912052356" date="2019-12-05"/>
+    <release version="R3.7.8.201807240049" date="2018-07-24"/>
   </releases>
   <screenshots>
     <screenshot type="default">
